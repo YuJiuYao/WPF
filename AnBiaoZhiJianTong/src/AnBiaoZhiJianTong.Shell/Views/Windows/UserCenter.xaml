@@ -10,7 +10,8 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Title="UserCenter" Height="700" Width="1000"
-        SizeToContent="Manual">
+        SizeToContent="Manual"
+        WindowStartupLocation="CenterOwner">
     <Border CornerRadius="6" BorderBrush="#DDDDDD" BorderThickness="1" Background="White" SnapsToDevicePixels="True">
         <Grid>
             <Grid.RowDefinitions>
