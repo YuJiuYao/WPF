@@ -60,7 +60,17 @@ namespace AnBiaoZhiJianTong.Shell.Views
             Close();
         }
 
-        private void AccountMenuItem_Click(object sender, RoutedEventArgs e)
+        private void LoginMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            if (_authService != null && _authService.IsAuthenticated)
+            {
+                return;
+            }
+
+            ShowLoginDialog();
+        }
+
+        private void LogoutMenuItem_Click(object sender, RoutedEventArgs e)
         {
             if (_authService == null || _eventAggregator == null)
             {
@@ -69,13 +79,24 @@ namespace AnBiaoZhiJianTong.Shell.Views
 
             if (!_authService.IsAuthenticated)
             {
-                ShowLoginDialog();
+                return;
             }
-            else
+
+            _authService.Logout();
+            _eventAggregator.GetEvent<LoginInfoEvent>().Publish(null);
+        }
+
+        private void UserCenterMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            if (_container == null)
             {
-                _authService.Logout();
-                _eventAggregator.GetEvent<LoginInfoEvent>().Publish(null);
+                return;
             }
+
+            var userCenterWindow = _container.Resolve<Views.Windows.UserCenter>();
+            userCenterWindow.Owner = this;
+            userCenterWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            userCenterWindow.ShowDialog();
         }
 
         private void ShowLoginDialog()

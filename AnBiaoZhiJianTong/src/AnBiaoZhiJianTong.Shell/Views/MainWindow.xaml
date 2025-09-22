@@ -264,15 +264,26 @@
                                 </ContextMenu.DataContext>
                                 <MenuItem Header="用户中心"
                                           Style="{StaticResource MenuItemStyle}"
-                                          IsEnabled="{Binding IsUserAuthenticated}">
+                                          Visibility="{Binding IsUserAuthenticated, Converter={StaticResource BoolToVisibilityConverter}}"
+                                          Click="UserCenterMenuItem_Click">
                                     <MenuItem.Icon>
                                         <Image Source="{StaticResource SettingIcon}" Width="16" Height="16"/>
                                     </MenuItem.Icon>
                                 </MenuItem>
-                                <MenuItem x:Name="AccountMenuItem"
-                                          Header="{Binding AccountActionText}"
+                                <MenuItem x:Name="LoginMenuItem"
+                                          Header="登录"
                                           Style="{StaticResource MenuItemStyle}"
-                                          Click="AccountMenuItem_Click">
+                                          Visibility="{Binding IsUserUnauthenticated, Converter={StaticResource BoolToVisibilityConverter}}"
+                                          Click="LoginMenuItem_Click">
+                                    <MenuItem.Icon>
+                                        <Image Source="{StaticResource SettingIcon}" Width="16" Height="16"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem x:Name="LogoutMenuItem"
+                                          Header="注销"
+                                          Style="{StaticResource MenuItemStyle}"
+                                          Visibility="{Binding IsUserAuthenticated, Converter={StaticResource BoolToVisibilityConverter}}"
+                                          Click="LogoutMenuItem_Click">
                                     <MenuItem.Icon>
                                         <Image Source="{StaticResource SettingIcon}" Width="16" Height="16"/>
                                     </MenuItem.Icon>

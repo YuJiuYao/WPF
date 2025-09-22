@@ -74,6 +74,7 @@ namespace AnBiaoZhiJianTong.Shell
             containerRegistry.RegisterForNavigation<ImportFilePage>();
 
             containerRegistry.Register<LoginWindow>();
+            containerRegistry.Register<UserCenter>();
         }
 
 

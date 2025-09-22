@@ -32,14 +32,16 @@ namespace AnBiaoZhiJianTong.Shell.ViewModels
         public bool IsUserAuthenticated
         {
             get => _isUserAuthenticated;
-            private set => SetProperty(ref _isUserAuthenticated, value);
+            private set
+            {
+                if (SetProperty(ref _isUserAuthenticated, value))
+                {
+                    RaisePropertyChanged(nameof(IsUserUnauthenticated));
+                }
+            }
         }
-        private string _accountActionText;
-        public string AccountActionText
-        {
-            get => _accountActionText;
-            private set => SetProperty(ref _accountActionText, value);
-        }
+
+        public bool IsUserUnauthenticated => !IsUserAuthenticated;
         public MainWindowViewModel(IAppConfiguration configuration, IAuthService authService, IEventAggregator eventAggregator)
         {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
@@ -90,7 +92,6 @@ namespace AnBiaoZhiJianTong.Shell.ViewModels
         private void UpdateAuthenticationState(bool isAuthenticated)
         {
             IsUserAuthenticated = isAuthenticated;
-            AccountActionText = isAuthenticated ? "注销" : "登录";
         }
     }
 
