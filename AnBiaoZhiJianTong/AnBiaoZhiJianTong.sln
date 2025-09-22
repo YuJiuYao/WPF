@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5827ECF7-221C-4C8C-8165-F4DA14EE6197}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{C4CFE8F7-0EC5-416E-B9BE-F1467C99255E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{737E44BF-EC17-49CD-9533-76F4F7FD0471}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{2BEC072E-4869-46E9-B14C-2041FF5634D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{1C42D9EE-7AD6-4C25-8C2D-7D5FCDCA5B0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{8955B804-3FCE-45B5-BE02-7F12BBB26AFE}"
+	ProjectSection(SolutionItems) = preProject
+		appsettings.json = appsettings.json
+		configs\baseanbiaoformat.json = configs\baseanbiaoformat.json
+		configs\private.pem = configs\private.pem
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{7D5CFDA1-B6E8-4C3D-BC6D-F68554D5C23B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnBiaoZhiJianTong.Shell", "src\AnBiaoZhiJianTong.Shell\AnBiaoZhiJianTong.Shell.csproj", "{0066CD05-0767-433B-94D4-7EB2AF8BE010}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CCA61349-4CBD-4E3E-A5BD-D47F87DA0735} = {CCA61349-4CBD-4E3E-A5BD-D47F87DA0735}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnBiaoZhiJianTong.Core", "src\AnBiaoZhiJianTong.Core\AnBiaoZhiJianTong.Core.csproj", "{29DFAAD1-0981-44F4-B1E3-661EDD240EF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnBiaoZhiJianTong.Common", "src\AnBiaoZhiJianTong.Common\AnBiaoZhiJianTong.Common.csproj", "{057D5BC5-A232-4415-AEA2-E611883E8874}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnBiaoZhiJianTong.Infrastructure", "src\AnBiaoZhiJianTong.Infrastructure\AnBiaoZhiJianTong.Infrastructure.csproj", "{88EA4F45-5EFC-4499-9E84-8D706BB992F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CCA61349-4CBD-4E3E-A5BD-D47F87DA0735} = {CCA61349-4CBD-4E3E-A5BD-D47F87DA0735}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnBiaoZhiJianTong.Models", "src\AnBiaoZhiJianTong.Models\AnBiaoZhiJianTong.Models.csproj", "{CCA61349-4CBD-4E3E-A5BD-D47F87DA0735}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0066CD05-0767-433B-94D4-7EB2AF8BE010}.Debug|x86.ActiveCfg = Debug|x86
+		{0066CD05-0767-433B-94D4-7EB2AF8BE010}.Debug|x86.Build.0 = Debug|x86
+		{0066CD05-0767-433B-94D4-7EB2AF8BE010}.Release|x86.ActiveCfg = Release|x86
+		{0066CD05-0767-433B-94D4-7EB2AF8BE010}.Release|x86.Build.0 = Release|x86
+		{29DFAAD1-0981-44F4-B1E3-661EDD240EF4}.Debug|x86.ActiveCfg = Debug|x86
+		{29DFAAD1-0981-44F4-B1E3-661EDD240EF4}.Debug|x86.Build.0 = Debug|x86
+		{29DFAAD1-0981-44F4-B1E3-661EDD240EF4}.Release|x86.ActiveCfg = Release|x86
+		{29DFAAD1-0981-44F4-B1E3-661EDD240EF4}.Release|x86.Build.0 = Release|x86
+		{057D5BC5-A232-4415-AEA2-E611883E8874}.Debug|x86.ActiveCfg = Debug|x86
+		{057D5BC5-A232-4415-AEA2-E611883E8874}.Debug|x86.Build.0 = Debug|x86
+		{057D5BC5-A232-4415-AEA2-E611883E8874}.Release|x86.ActiveCfg = Release|x86
+		{057D5BC5-A232-4415-AEA2-E611883E8874}.Release|x86.Build.0 = Release|x86
+		{88EA4F45-5EFC-4499-9E84-8D706BB992F6}.Debug|x86.ActiveCfg = Debug|x86
+		{88EA4F45-5EFC-4499-9E84-8D706BB992F6}.Debug|x86.Build.0 = Debug|x86
+		{88EA4F45-5EFC-4499-9E84-8D706BB992F6}.Release|x86.ActiveCfg = Release|x86
+		{88EA4F45-5EFC-4499-9E84-8D706BB992F6}.Release|x86.Build.0 = Release|x86
+		{CCA61349-4CBD-4E3E-A5BD-D47F87DA0735}.Debug|x86.ActiveCfg = Debug|x86
+		{CCA61349-4CBD-4E3E-A5BD-D47F87DA0735}.Debug|x86.Build.0 = Debug|x86
+		{CCA61349-4CBD-4E3E-A5BD-D47F87DA0735}.Release|x86.ActiveCfg = Release|x86
+		{CCA61349-4CBD-4E3E-A5BD-D47F87DA0735}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0066CD05-0767-433B-94D4-7EB2AF8BE010} = {5827ECF7-221C-4C8C-8165-F4DA14EE6197}
+		{29DFAAD1-0981-44F4-B1E3-661EDD240EF4} = {5827ECF7-221C-4C8C-8165-F4DA14EE6197}
+		{057D5BC5-A232-4415-AEA2-E611883E8874} = {5827ECF7-221C-4C8C-8165-F4DA14EE6197}
+		{88EA4F45-5EFC-4499-9E84-8D706BB992F6} = {5827ECF7-221C-4C8C-8165-F4DA14EE6197}
+		{CCA61349-4CBD-4E3E-A5BD-D47F87DA0735} = {5827ECF7-221C-4C8C-8165-F4DA14EE6197}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8B4E5E3-6582-4384-AC90-AE8A74638A89}
+	EndGlobalSection
+EndGlobal

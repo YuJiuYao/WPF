@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net462</TargetFrameworks>
+		<UseWPF>true</UseWPF>
+		<PlatformTarget>x86</PlatformTarget>
+		<Platforms>x86</Platforms>
+		<LangVersion>8</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Text.Json" Version="9.0.8" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="Aspose.Words">
+			<HintPath>..\..\DllImport\Aspose.Words.dll</HintPath>
+		</Reference>
+		<Reference Include="log4net">
+			<HintPath>..\..\DllImport\log4net.dll</HintPath>
+		</Reference>
+		<Reference Include="SqlSugar">
+			<HintPath>..\..\DllImport\SqlSugar.dll</HintPath>
+		</Reference>
+		<Reference Include="BouncyCastle.Cryptography">
+			<HintPath>..\..\DllImport\BouncyCastle.Cryptography.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.VisualBasic" />
+		<Reference Include="System.Management" />
+	</ItemGroup>
+</Project>

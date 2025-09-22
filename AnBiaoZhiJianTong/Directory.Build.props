@@ -1,0 +1,14 @@
+<Project>
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<CopyDebugSymbolsToOutputDirectory>false</CopyDebugSymbolsToOutputDirectory>
+	</PropertyGroup>
+	<!-- 发布完成后，删掉发布目录里的所有 .pdb -->
+	<Target Name="StripPdbFromPublish" AfterTargets="Publish">
+		<ItemGroup>
+			<PublishPdbFiles Include="$(PublishDir)**\*.pdb" />
+		</ItemGroup>
+		<Delete Files="@(PublishPdbFiles)" />
+	</Target>
+</Project>

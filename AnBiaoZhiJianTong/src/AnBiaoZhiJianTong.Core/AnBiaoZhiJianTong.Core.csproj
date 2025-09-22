@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462</TargetFrameworks>
+		<UseWPF>true</UseWPF>
+		<PlatformTarget>x86</PlatformTarget>
+		<Platforms>x86</Platforms>
+		<LangVersion>8</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+    <Page Remove="Models\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnBiaoZhiJianTong.Models\AnBiaoZhiJianTong.Models.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="System.Data.SQLite">
+			<HintPath>..\..\DllImport\System.Data.SQLite.dll</HintPath>
+		</Reference>
+		<Reference Include="SqlSugar">
+			<HintPath>..\..\DllImport\SqlSugar.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1495 @@
+[
+  {
+    "目录名": "样式检查",
+    "二级目录": [
+      {
+        "目录名": "内容检查",
+        "检测点": [
+          {
+            "NodeValue": "",
+            "NodeName": "不允许出现单位或人员名称",
+            "NodeCode": "A0101",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          }
+        ]
+      },
+      {
+        "目录名": "封面",
+        "检测点": [
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"宋体\"},{\"codeText\":\"黑体\",\"codeValue\":\"黑体\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"仿宋_GB2312\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"思源宋体\"},{\"codeText\":\"仿宋\",\"codeValue\":\"仿宋\"}]",
+            "NodeName": "封面字体",
+            "NodeCode": "B0906",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"初号\",\"codeValue\":\"初号\"},{\"codeText\":\"一号\",\"codeValue\":\"一号\"},{\"codeText\":\"二号\",\"codeValue\":\"二号\"}]",
+            "NodeName": "封面字号",
+            "NodeCode": "B0907",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"黑色\",\"codeValue\":\"黑色\"}]",
+            "NodeName": "封面文字颜色",
+            "NodeCode": "B0908",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          }
+        ]
+      },
+      {
+        "目录名": "目录",
+        "检测点": [
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "目录标题字号",
+            "NodeCode": "B0107",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "目录标题字体",
+            "NodeCode": "B0108",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "目录正文字号",
+            "NodeCode": "B0104",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "目录正文字体",
+            "NodeCode": "B0105",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"2倍行距\",\"codeValue\":\"2倍行距\"},{\"codeText\":\"单倍行距\",\"codeValue\":\"单倍行距\"},{\"codeText\":\"1.5倍行距\",\"codeValue\":\"1.5倍行距\"}]",
+            "NodeName": "目录标题行距",
+            "NodeCode": "B0118",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"2倍行距\",\"codeValue\":\"2倍行距\"},{\"codeText\":\"单倍行距\",\"codeValue\":\"单倍行距\"},{\"codeText\":\"1.5倍行距\",\"codeValue\":\"1.5倍行距\"}]",
+            "NodeName": "目录内容行距",
+            "NodeCode": "B0119",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "目录标题只允许中文字体设置",
+            "NodeCode": "B0121",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "目录正文只允许中文字体设置",
+            "NodeCode": "B0122",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"}]",
+            "NodeName": "目录正文对齐方式",
+            "NodeCode": "B0123",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"}]",
+            "NodeName": "目录标题对齐方式",
+            "NodeCode": "B0126",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"2字符\",\"codeValue\":\"2字符\"},{\"codeText\":\"1字符\",\"codeValue\":\"1字符\"}]",
+            "NodeName": "目录正文首行缩进",
+            "NodeCode": "B0133",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许设置目录",
+            "NodeCode": "B0101",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": "False"
+          },
+          {
+
+            "NodeValue": "",
+            "NodeName": "首页应为目录",
+            "NodeCode": "B0124",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "目录页不编制页码",
+            "NodeCode": "B0125",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "目录标题为黑色",
+            "NodeCode": "B0103",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "目录正文为黑色",
+            "NodeCode": "B0106",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          }
+        ]
+      },
+      {
+        "目录名": "标题",
+        "检测点": [
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "一级标题字体",
+            "NodeCode": "B0217",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "二级标题字体",
+            "NodeCode": "B0218",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "三级标题字体",
+            "NodeCode": "B0219",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "四级标题字体",
+            "NodeCode": "B0223",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "五级标题字体",
+            "NodeCode": "B0225",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "六级标题字体",
+            "NodeCode": "B0227",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "七级标题字体",
+            "NodeCode": "B0229",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "八级标题字体",
+            "NodeCode": "B0231",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "九级标题字体",
+            "NodeCode": "B0233",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "一级标题字号",
+            "NodeCode": "B0214",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "二级标题字号",
+            "NodeCode": "B0215",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "三级标题字号",
+            "NodeCode": "B0216",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "四级标题字号",
+            "NodeCode": "B0222",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "五级标题字号",
+            "NodeCode": "B0224",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "六级标题字号",
+            "NodeCode": "B0226",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "七级标题字号",
+            "NodeCode": "B0228",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "八级标题字号",
+            "NodeCode": "B0230",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"}]",
+            "NodeName": "九级标题字号",
+            "NodeCode": "B0232",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "一级标题对齐方式",
+            "NodeCode": "B0252",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "二级标题对齐方式",
+            "NodeCode": "B0253",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "三级标题对齐方式",
+            "NodeCode": "B0254",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "四级标题对齐方式",
+            "NodeCode": "B0255",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "五级标题对齐方式",
+            "NodeCode": "B0256",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "六级标题对齐方式",
+            "NodeCode": "B0257",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "七级标题对齐方式",
+            "NodeCode": "B0258",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "八级标题对齐方式",
+            "NodeCode": "B0259",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"}]",
+            "NodeName": "九级标题对齐方式",
+            "NodeCode": "B0260",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"1字符\",\"codeValue\":\"1字符\"},{\"codeText\":\"2字符\",\"codeValue\":\"2字符\"}]",
+            "NodeName": "标题首行缩进",
+            "NodeCode": "B0205",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"},{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"}]",
+            "NodeName": "标题对齐方式",
+            "NodeCode": "B0204",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"标准\",\"codeValue\":\"标准\"}]",
+            "NodeName": "标题字符间距",
+            "NodeCode": "B0244",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"宋体\"},{\"codeText\":\"黑体\",\"codeValue\":\"黑体\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"仿宋_GB2312\"},{\"codeText\":\"仿宋\",\"codeValue\":\"仿宋\"}]",
+            "NodeName": "标题字体",
+            "NodeCode": "B0202",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"小四\",\"codeValue\":\"小四\"},{\"codeText\":\"四号\",\"codeValue\":\"四号\"},{\"codeText\":\"二号\",\"codeValue\":\"二号\"},{\"codeText\":\"三号\",\"codeValue\":\"三号\"},{\"codeText\":\"一级标题：三号，二级标题及以下：四号\",\"codeValue\":\"一级标题：三号，二级标题及以下：四号\"}]",
+            "NodeName": "标题字号",
+            "NodeCode": "B0203",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "标题只允许中文字体设置",
+            "NodeCode": "B0242",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"一级\",\"codeValue\":\"01\"},{\"codeText\":\"二级\",\"codeValue\":\"02\"},{\"codeText\":\"三级\",\"codeValue\":\"03\"},{\"codeText\":\"四级\",\"codeValue\":\"04\"},{\"codeText\":\"五级\",\"codeValue\":\"05\"},{\"codeText\":\"六级\",\"codeValue\":\"06\"},{\"codeText\":\"七级\",\"codeValue\":\"07\"},{\"codeText\":\"八级\",\"codeValue\":\"08\"},{\"codeText\":\"九级\",\"codeValue\":\"09\"}]",
+            "NodeName": "标题级数",
+            "NodeCode": "B0807",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"正文标题序号以阿拉伯数字编排，一级为1、2、3...；二级为1.1、1.2、...以此类推\",\"codeValue\":\"01\"}]",
+            "NodeName": "标题序号规则",
+            "NodeCode": "B0213",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"1.1.1\",\"codeValue\":\"1.1.1\"}]",
+            "NodeName": "同级标题序号保持连续性，序号只允许阿拉伯数字，并以特定符号分隔",
+            "NodeCode": "A0154",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "标题字体颜色为黑色",
+            "NodeCode": "B0206",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "标题不得有空格",
+            "NodeCode": "B0220",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许标题字体加粗",
+            "NodeCode": "B0207",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许标题字体倾斜",
+            "NodeCode": "B0208",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许标题字体涂色",
+            "NodeCode": "B0212",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许标题字体着重号",
+            "NodeCode": "B0210",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许标题字体下划线",
+            "NodeCode": "B0209",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许标题涂改/删除痕迹",
+            "NodeCode": "B0211",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          }
+        ]
+      },
+      {
+        "目录名": "正文",
+        "检测点": [
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"宋体\"},{\"codeText\":\"黑体\",\"codeValue\":\"黑体\"},{\"codeText\":\"仿宋\",\"codeValue\":\"仿宋\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"仿宋_GB2312\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"思源宋体\"}]",
+            "NodeName": "正文字体",
+            "NodeCode": "B0301",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"小三\",\"codeValue\":\"小三\"},{\"codeText\":\"四号\",\"codeValue\":\"四号\"},{\"codeText\":\"小四\",\"codeValue\":\"小四\"}]",
+            "NodeName": "正文字号",
+            "NodeCode": "B0302",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"两端对齐\",\"codeValue\":\"两端对齐\"},{\"codeText\":\"居中\",\"codeValue\":\"居中\"},{\"codeText\":\"左对齐\",\"codeValue\":\"左对齐\"},{\"codeText\":\"右对齐\",\"codeValue\":\"右对齐\"}]",
+            "NodeName": "正文对齐方式",
+            "NodeCode": "B0303",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "正文只允许中文字体设置",
+            "NodeCode": "B0321",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"标准\",\"codeValue\":\"01\"}]",
+            "NodeName": "正文字符间距",
+            "NodeCode": "B0312",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "正文字体颜色为黑色",
+            "NodeCode": "B0304",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "正文不得有空格",
+            "NodeCode": "B0314",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许正文字体加粗",
+            "NodeCode": "B0305",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许正文字体倾斜",
+            "NodeCode": "B0306",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许正文字体涂色",
+            "NodeCode": "B0310",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许正文字体着重号",
+            "NodeCode": "B0308",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许正文字体下划线",
+            "NodeCode": "B0307",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许正文涂改/删除痕迹",
+            "NodeCode": "B0309",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "是否存在特殊标点：,、.、;、'、\"、:、~、!、@、#、$、%、^、&、*、▲、＞、≥、＜、≤、☆、★",
+            "NodeCode": "A0166",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          }
+        ]
+      },
+      {
+        "目录名": "段落",
+        "检测点": [
+          {
+            "NodeValue": "",
+            "NodeName": "段前间距",
+            "NodeUnit": "[{\"codeText\":\"磅\",\"codeValue\":\"03\"},{\"codeText\":\"厘米\",\"codeValue\":\"02\"},{\"codeText\":\"行\",\"codeValue\":\"01\"}]",
+            "NodeCode": "B0802",
+            "Type": "数字单位",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "段后间距",
+            "NodeUnit": "[{\"codeText\":\"磅\",\"codeValue\":\"03\"},{\"codeText\":\"厘米\",\"codeValue\":\"02\"},{\"codeText\":\"行\",\"codeValue\":\"01\"}]",
+            "NodeCode": "B0803",
+            "Type": "数字单位",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"固定值\",\"codeValue\":\"01\"},{\"codeText\":\"单倍行距\",\"codeValue\":\"02\"},{\"codeText\":\"1.5倍行距\",\"codeValue\":\"04\"},{\"codeText\":\"多倍行距\",\"codeValue\":\"03\"}]",
+            "NodeName": "行距",
+            "NodeUnit": "[{\"codeText\":\"倍\",\"codeValue\":\"倍\"},{\"codeText\":\"磅\",\"codeValue\":\"磅\"}]",
+            "NodeCode": "B0801",
+            "Type": "特殊",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "左侧缩进",
+            "NodeCode": "B0804",
+            "NodeUnit": "[{\"codeText\":\"磅\",\"codeValue\":\"03\"},{\"codeText\":\"厘米\",\"codeValue\":\"02\"},{\"codeText\":\"字符\",\"codeValue\":\"01\"}]",
+            "Type": "数字单位",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "右侧缩进",
+            "NodeUnit": "[{\"codeText\":\"磅\",\"codeValue\":\"03\"},{\"codeText\":\"厘米\",\"codeValue\":\"02\"},{\"codeText\":\"字符\",\"codeValue\":\"01\"}]",
+            "NodeCode": "B0805",
+            "Type": "数字单位",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "首行缩进",
+            "NodeUnit": "[{\"codeText\":\"磅\",\"codeValue\":\"03\"},{\"codeText\":\"厘米\",\"codeValue\":\"02\"},{\"codeText\":\"字符\",\"codeValue\":\"01\"}]",
+            "NodeCode": "B0806",
+            "Type": "数字单位",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"1级\",\"codeValue\":\"1级\"},{\"codeText\":\"2级\",\"codeValue\":\"2级\"},{\"codeText\":\"3级\",\"codeValue\":\"3级\"},{\"codeText\":\"正文文本\",\"codeValue\":\"正文文本\"}]",
+            "NodeName": "最高大纲级别",
+            "NodeCode": "B0508",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "字符缩放",
+            "NodeUnit": "[{\"codeText\":\"%\",\"codeValue\":\"01\"}]",
+            "NodeCode": "B0659",
+            "Type": "数字",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "需勾选“定义了文档网格，则与网格对齐”",
+            "NodeCode": "B0509",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "段落前后不设置空行",
+            "NodeCode": "B0510",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "分页不允许孤行控制",
+            "NodeCode": "B0517",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "分页不允许与下段同页",
+            "NodeCode": "B0518",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "分页不允许段中不分页",
+            "NodeCode": "B0519",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "分页不允许段前分页",
+            "NodeCode": "B0520",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          }
+        ]
+      },
+      {
+        "目录名": "图表",
+        "检测点": [
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"宋体\"},{\"codeText\":\"黑体\",\"codeValue\":\"黑体\"},{\"codeText\":\"仿宋\",\"codeValue\":\"仿宋\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"仿宋_GB2312\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"思源宋体\"}]",
+            "NodeName": "图表字体",
+            "NodeCode": "B0403",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字体",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"三号\"},{\"codeText\":\"小三\",\"codeValue\":\"小三\"},{\"codeText\":\"四号\",\"codeValue\":\"四号\"},{\"codeText\":\"小四\",\"codeValue\":\"小四\"},{\"codeText\":\"五号\",\"codeValue\":\"五号\"}]",
+            "NodeName": "图表字号",
+            "NodeCode": "B0404",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "字号",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"黑色\",\"codeValue\":\"黑色\"}]",
+            "NodeName": "表格线颜色",
+            "NodeCode": "B0401",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"0.5磅\",\"codeValue\":\"0.5磅\"},{\"codeText\":\"1.0磅\",\"codeValue\":\"1.0磅\"}]",
+            "NodeName": "表格线粗细",
+            "NodeCode": "B0402",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "图表只允许中文字体设置",
+            "NodeCode": "B0422",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"标准\",\"codeValue\":\"标准\"}]",
+            "NodeName": "图表中文字字符间距",
+            "NodeCode": "B0427",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "图表内字体颜色为黑色",
+            "NodeCode": "B0406",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许图表字体加粗",
+            "NodeCode": "B0407",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许图表字体倾斜",
+            "NodeCode": "B0408",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许图表字体着重号",
+            "NodeCode": "B0410",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许图表涂改/删除痕迹",
+            "NodeCode": "B0420",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许图表字体出现下划线",
+            "NodeCode": "B0421",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许表格涂色",
+            "NodeCode": "B0436",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许表格底纹",
+            "NodeCode": "B0437",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          }
+        ]
+      },
+      {
+        "目录名": "页面设置",
+        "检测点": [
+          {
+            "NodeValue": "[{\"codeText\":\"纵向\",\"codeValue\":\"纵向\"},{\"codeText\":\"横向\",\"codeValue\":\"横向\"}]",
+            "NodeName": "纸张方向",
+            "NodeCode": "B0601",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"2厘米\",\"codeValue\":\"2厘米\"},{\"codeText\":\"2.5厘米\",\"codeValue\":\"2.5厘米\"},{\"codeText\":\"2.54厘米\",\"codeValue\":\"2.54厘米\"},{\"codeText\":\"3厘米\",\"codeValue\":\"3厘米\"}]",
+            "NodeName": "页上边距",
+            "NodeUnit": "[{\"codeText\":\"厘米\",\"codeValue\":\"02\"}]",
+            "NodeCode": "B0813",
+            "Type": "数字",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"2厘米\",\"codeValue\":\"2厘米\"},{\"codeText\":\"2.5厘米\",\"codeValue\":\"2.5厘米\"},{\"codeText\":\"2.54厘米\",\"codeValue\":\"2.54厘米\"},{\"codeText\":\"3厘米\",\"codeValue\":\"3厘米\"}]",
+            "NodeName": "页下边距",
+            "NodeCode": "B0814",
+            "NodeUnit": "[{\"codeText\":\"厘米\",\"codeValue\":\"02\"}]",
+            "Type": "数字",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"A4\",\"codeValue\":\"A4\"},{\"codeText\":\"A3\",\"codeValue\":\"A3\"}]",
+            "NodeName": "纸张大小",
+            "NodeCode": "B0606",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"3.17厘米\",\"codeValue\":\"3.17厘米\"},{\"codeText\":\"1.5厘米\",\"codeValue\":\"1.5厘米\"},{\"codeText\":\"1.91厘米\",\"codeValue\":\"1.91厘米\"},{\"codeText\":\"2厘米\",\"codeValue\":\"2厘米\"}]",
+            "NodeName": "页左边距",
+            "NodeUnit": "[{\"codeText\":\"厘米\",\"codeValue\":\"02\"}]",
+            "NodeCode": "B0815",
+            "Type": "数字",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"2.54厘米\",\"codeValue\":\"2.54厘米\"},{\"codeText\":\"1.5厘米\",\"codeValue\":\"1.5厘米\"},{\"codeText\":\"1.91厘米\",\"codeValue\":\"1.91厘米\"},{\"codeText\":\"2厘米\",\"codeValue\":\"2厘米\"}]",
+            "NodeName": "页右边距",
+            "NodeUnit": "[{\"codeText\":\"厘米\",\"codeValue\":\"02\"}]",
+            "NodeCode": "B0816",
+            "Type": "数字",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"1.5厘米\",\"codeValue\":\"1.5厘米\"}]",
+            "NodeName": "页眉页边距",
+            "NodeCode": "B0633",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"1.5厘米\",\"codeValue\":\"1.5厘米\"}]",
+            "NodeName": "页脚页边距",
+            "NodeCode": "B0634",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "页码字体",
+            "NodeCode": "B0611",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"两端对齐\",\"codeValue\":\"01\"},{\"codeText\":\"居中对齐\",\"codeValue\":\"02\"},{\"codeText\":\"左对齐\",\"codeValue\":\"03\"},{\"codeText\":\"右对齐\",\"codeValue\":\"04\"},{\"codeText\":\"分散对齐\",\"codeValue\":\"05\"},{\"codeText\":\"底部居中\",\"codeValue\":\"06\"}]",
+            "NodeName": "页码对齐方式",
+            "NodeCode": "B0612",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"},{\"codeText\":\"小五\",\"codeValue\":\"06\"}]",
+            "NodeName": "页码字号",
+            "NodeCode": "B0613",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"0cm\",\"codeValue\":\"0cm\"}]",
+            "NodeName": "装订线宽度",
+            "NodeCode": "B0631",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"宋体\",\"codeValue\":\"01\"},{\"codeText\":\"黑体\",\"codeValue\":\"02\"},{\"codeText\":\"仿宋_GB2312\",\"codeValue\":\"03\"},{\"codeText\":\"思源宋体\",\"codeValue\":\"04\"},{\"codeText\":\"仿宋\",\"codeValue\":\"05\"}]",
+            "NodeName": "页码字体（仅检测有页码部分）",
+            "NodeCode": "B0656",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"三号\",\"codeValue\":\"01\"},{\"codeText\":\"小三\",\"codeValue\":\"02\"},{\"codeText\":\"四号\",\"codeValue\":\"03\"},{\"codeText\":\"小四\",\"codeValue\":\"04\"},{\"codeText\":\"五号\",\"codeValue\":\"05\"},{\"codeText\":\"小五\",\"codeValue\":\"06\"}]",
+            "NodeName": "页码字号（仅检测有页码部分）",
+            "NodeCode": "B0657",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "[{\"codeText\":\"居中对齐\",\"codeValue\":\"02\"}]",
+            "NodeName": "页码对齐方式（仅检测有页码部分）",
+            "NodeCode": "B0658",
+            "Type": "选择",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许插入页眉/页脚/页码",
+            "NodeCode": "B0607",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许设置页眉",
+            "NodeCode": "B0619",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许设置空白页",
+            "NodeCode": "B0610",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许设置纸张底色（背景色）",
+            "NodeCode": "B0608",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "颜色",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "页码必须为阿拉伯数字",
+            "NodeCode": "B0620",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许添加图片",
+            "NodeCode": "A0205",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "不允许添加水印",
+            "NodeCode": "A0206",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          }
+        ]
+      },
+      {
+        "目录名": "其它检查",
+        "检测点": [
+          {
+            "NodeValue": "",
+            "NodeName": "不得超过固定页数",
+            "NodeUnit": "",
+            "NodeCode": "A0113",
+            "Type": "数字",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": ""
+          },
+          {
+            "NodeValue": "",
+            "NodeName": "使用 Microsoft Word 编写",
+            "NodeCode": "C0102",
+            "Type": "判定",
+            "CheckRequirementItem": "",
+            "IsRenGong": "否",
+            "IsParent": "",
+            "AttriBute": "其他",
+            "NodeInfo": "False"
+          }
+        ]
+      }
+    ]
+  }
+]

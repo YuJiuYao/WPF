@@ -1,0 +1,35 @@
+﻿<prism:PrismApplication x:Class="AnBiaoZhiJianTong.Shell.App"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:prism="http://prismlibrary.com/"
+                        xmlns:hc="https://handyorg.github.io/handycontrol">
+
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- HandyControl主题 -->
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml"/>
+
+                
+                <!-- 图标资源 -->
+                <ResourceDictionary Source="pack://application:,,,/AnBiaoZhiJianTong.Shell;component/Properties/Icons.xaml"/>
+                <!-- 自定义样式 -->
+                <ResourceDictionary Source="pack://application:,,,/AnBiaoZhiJianTong.Shell;component/Properties/ImportTender.xaml"/>
+                <!-- 转换器资源 -->
+
+            </ResourceDictionary.MergedDictionaries>
+            <!-- 全局字符串资源 -->
+            <system:String x:Key="AppTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">暗标智检通</system:String>
+            <system:String x:Key="AppVersion" xmlns:system="clr-namespace:System;assembly=mscorlib">1.0.0</system:String>
+            <system:String x:Key="CompanyName" xmlns:system="clr-namespace:System;assembly=mscorlib">中星辰宇(杭州)数字科技有限公司</system:String>
+
+            <!-- 全局转换器 -->
+            <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+
+            <!-- 应用程序级别的数据模板 -->
+
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>

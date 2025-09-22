@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462</TargetFrameworks>
+		<UseWPF>true</UseWPF>
+		<PlatformTarget>x86</PlatformTarget>
+		<Platforms>x86</Platforms>
+		<LangVersion>8</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Refit" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="9.0.8" />
+  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="Aspose.Words">
+			<HintPath>..\..\DllImport\Aspose.Words.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.SQLite">
+			<HintPath>..\..\DllImport\System.Data.SQLite.dll</HintPath>
+		</Reference>
+		<Reference Include="SqlSugar">
+			<HintPath>..\..\DllImport\SqlSugar.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+</Project>

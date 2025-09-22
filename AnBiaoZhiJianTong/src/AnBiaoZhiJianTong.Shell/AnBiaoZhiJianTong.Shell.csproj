@@ -1,0 +1,271 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup Label="Globals">
+		<WebView2EnableCsWinRTProjection>False</WebView2EnableCsWinRTProjection>
+		<WebView2UseWinRT>False</WebView2UseWinRT>
+		<Platforms>x86</Platforms>
+	</PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFrameworks>net462</TargetFrameworks>
+		<UseWPF>true</UseWPF>
+		<Platforms>x86</Platforms>
+		<PlatformTarget>x86</PlatformTarget>
+	</PropertyGroup>
+	<PropertyGroup>
+		<!-- Confuser CLI 路径 -->
+		<ConfuserExPath>$(SolutionDir)tools\ConfuserEx\Confuser.CLI.exe</ConfuserExPath>
+
+		<!-- 只在 Release 发布时执行 -->
+		<RunConfuserOnPublish Condition="'$(Configuration)' == 'Release'">true</RunConfuserOnPublish>
+		<ApplicationIcon>Properties\Icons\AnBiao.ico</ApplicationIcon>
+		<LangVersion>8</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="HandyControl" Version="3.5.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.8" />
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3296.44" />
+		<PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+		<PackageReference Include="System.Net.Http" Version="4.3.4" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AnBiaoZhiJianTong.Common\AnBiaoZhiJianTong.Common.csproj" />
+		<ProjectReference Include="..\AnBiaoZhiJianTong.Core\AnBiaoZhiJianTong.Core.csproj" />
+		<ProjectReference Include="..\AnBiaoZhiJianTong.Infrastructure\AnBiaoZhiJianTong.Infrastructure.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="Aspose.Words">
+			<HintPath>..\..\DllImport\Aspose.Words.dll</HintPath>
+		</Reference>
+		<Reference Include="BouncyCastle.Cryptography">
+			<HintPath>..\..\DllImport\BouncyCastle.Cryptography.dll</HintPath>
+		</Reference>
+		<Reference Include="Check_DLL_V2">
+			<HintPath>..\..\DllImport\Check_DLL_V2.dll</HintPath>
+		</Reference>
+		<Reference Include="ICSharpCode.SharpZipLib">
+			<HintPath>..\..\DllImport\ICSharpCode.SharpZipLib.dll</HintPath>
+		</Reference>
+		<Reference Include="itextsharp">
+			<HintPath>..\..\DllImport\itextsharp.dll</HintPath>
+		</Reference>
+		<Reference Include="log4net">
+			<HintPath>..\..\DllImport\log4net.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.VisualBasic" />
+		<Reference Include="SmartCheckOptimizer">
+			<HintPath>..\..\DllImport\SmartCheckOptimizer.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.Linq" />
+		<Reference Include="SqlSugar">
+			<HintPath>..\..\DllImport\SqlSugar.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.SQLite">
+			<HintPath>..\..\DllImport\System.Data.SQLite.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Management" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="..\..\configs\**\*.*">
+			<!-- 让 VS 里显示为“configs/…”（仅显示用） -->
+			<Link>configs\%(RecursiveDir)%(Filename)%(Extension)</Link>
+
+			<!-- 编译到 bin\<Configuration>\ 时复制 -->
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+
+			<!-- dotnet publish 时也复制 -->
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+
+			<!-- 关键：指定输出时的相对路径 = ./configs/... -->
+			<TargetPath>configs\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Remove="..\..\configs\Aspose.Words.NET.lic" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Properties\Icons\AnBiao.ico" />
+	  <None Remove="Properties\Icons\daoru4.ico" />
+	  <None Remove="Properties\Icons\DouT.ico" />
+	  <None Remove="Properties\Icons\mobile.ico" />
+	  <None Remove="Properties\Icons\shanchu.ico" />
+	  <None Remove="Properties\Icons\user.png" />
+	  <None Remove="Properties\Icons\word.ico" />
+	  <None Remove="Properties\Icons\xinzengtimu.ico" />
+	  <None Remove="Properties\Icons\xiugai.ico" />
+	  <None Remove="Properties\Icons\yanzhengma.ico" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="..\..\configs\Aspose.Words.NET.lic">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<Resource Include="Properties\Icons\daoru4.ico" />
+		<Resource Include="Properties\Icons\DouT.ico" />
+		<Resource Include="Properties\Icons\mobile.ico" />
+		<Resource Include="Properties\Icons\shanchu.ico" />
+		<Resource Include="Properties\Icons\word.ico" />
+		<Resource Include="Properties\Icons\xinzengtimu.ico" />
+		<Resource Include="Properties\Icons\xiugai.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\tools\Build\strip-config-comments.ps1">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Settings.Designer.cs">
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="ViewModels\Pages\" />
+	  <Folder Include="Views\Pages\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Resource Include="Properties\Icons\AnBiao.ico" />
+	  <Resource Include="Properties\Icons\user.png" />
+	  <Resource Include="Properties\Icons\yanzhengma.ico" />
+	</ItemGroup>
+
+	<Target Name="RunConfuserOnPublish" AfterTargets="Publish" Condition=" '$(RunConfuserOnPublish)' == 'true' AND Exists('$(ConfuserExPath)') ">
+
+		<!-- 时间戳（仅用于日志） -->
+		<PropertyGroup>
+			<__Now>$([System.DateTime]::Now.ToString("yyyy-MM-dd HH:mm:ss"))</__Now>
+		</PropertyGroup>
+
+		<Message Text=" ======================= 开始执行混淆处理（RunConfuserOnPublish）=======================" Importance="high" />
+
+		<!-- 目录与绝对路径 -->
+		<PropertyGroup>
+			<!-- 发布目录（绝对路径） -->
+			<PublishDirFull>$([System.IO.Path]::GetFullPath('$(PublishDir)'))</PublishDirFull>
+
+			<!-- publish 的上级目录，例如 ...\bin\x86\Release\net462\ （绝对路径） -->
+			<_PublishTrim>$([System.String]::Copy('$(PublishDirFull)').TrimEnd('\'))</_PublishTrim>
+			<PublishParentDir>$([System.IO.Path]::GetDirectoryName('$(_PublishTrim)'))</PublishParentDir>
+
+			<!-- 混淆处理(ConfuserEx)文件目录 -->
+			<ObfOnlyDirFull>$([System.IO.Path]::GetFullPath('$(PublishParentDir)\obf\'))</ObfOnlyDirFull>
+			<PublishObfDirFull>$([System.IO.Path]::GetFullPath('$(PublishParentDir)\publish-obf\'))</PublishObfDirFull>
+
+			<!-- 临时 crproj 路径 -->
+			<ConfuserTempProj>$(IntermediateOutputPath)confuser\$(AssemblyName).confuser.crproj</ConfuserTempProj>
+			<ConfuserTempProjFull>$([System.IO.Path]::GetFullPath('$(ConfuserTempProj)'))</ConfuserTempProjFull>
+		</PropertyGroup>
+
+		<!-- 确保目录存在 -->
+		<MakeDir Directories="$([System.IO.Path]::GetDirectoryName('$(ConfuserTempProjFull)'))" />
+		<MakeDir Directories="$(ObfOnlyDirFull)" />
+		<MakeDir Directories="$(PublishObfDirFull)" />
+
+		<!-- 生成临时 .csproj（显式 baseDir，module 用相对 baseDir 的文件名） -->
+		<Message Text="======================= 生成临时 crproj：$(ConfuserTempProjFull) =======================" Importance="high" />
+		<ItemGroup>
+			<!-- 以发布目录为基准，混淆产物输出到同级 obf 绝对路径 -->
+			<_ConfuserCrproj Include="&lt;project baseDir='$(PublishDirFull)' outputDir='$(ObfOnlyDirFull)'&gt;" />
+
+			<!-- 0) 全局安全基线：只开 constants + ctrl flow；彻底关闭 rename -->
+			<_ConfuserCrproj Include="  &lt;rule pattern='true' preset='none'&gt;" />
+			<_ConfuserCrproj Include="    &lt;protection id='constants' /&gt;" />
+			<_ConfuserCrproj Include="    &lt;protection id='ctrl flow' /&gt;" />
+			<_ConfuserCrproj Include="  &lt;/rule&gt;" />
+
+			<!-- 1) WPF 启动 EXE：为稳妥仅开 constants（避免 XAML 绑定/事件名被影响） -->
+			<_ConfuserCrproj Include="  &lt;rule pattern=&quot;module('$(AssemblyName).exe')&quot; preset='none'&gt;" />
+			<_ConfuserCrproj Include="    &lt;protection id='constants' /&gt;" />
+			<_ConfuserCrproj Include="  &lt;/rule&gt;" />
+
+			<!-- 2) ORM/实体所在模块：禁用 ctrl flow（表达式树/动态代理更稳） -->
+			<_ConfuserCrproj Include="  &lt;rule pattern=&quot;module('AnBiaoZhiJianTong.Shell.exe') or module('AnBiaoZhiJianTong.Infrastructure.dll')&quot; preset='none'&gt;" />
+			<_ConfuserCrproj Include="    &lt;protection id='constants' /&gt;" />
+			<_ConfuserCrproj Include="  &lt;/rule&gt;" />
+
+			<!-- 3) 带 SqlSugar 特性的类：完全不保护（避免反射崩） -->
+			<_ConfuserCrproj Include="  &lt;rule pattern=&quot;&#xD;&#xA;    has-attr('SqlSugar.SugarTable') or has-attr('SqlSugar.SugarTableAttribute') or&#xD;&#xA;    has-attr('SqlSugar.SugarColumn') or has-attr('SqlSugar.SugarColumnAttribute')&#xD;&#xA;  &quot; preset='none' /&gt;" />
+
+			<!-- 要处理的模块（相对 baseDir 的文件名） -->
+			<_ConfuserCrproj Include="  &lt;module path='$(AssemblyName).exe' /&gt;" />
+			<_ConfuserCrproj Include="  &lt;module path='AnBiaoZhiJianTong.Common.dll' /&gt;" />
+			<_ConfuserCrproj Include="  &lt;module path='AnBiaoZhiJianTong.Core.dll' /&gt;" />
+			<_ConfuserCrproj Include="  &lt;module path='AnBiaoZhiJianTong.Infrastructure.dll' /&gt;" />
+			<_ConfuserCrproj Include="  &lt;module path='AnBiaoZhiJianTong.Services.dll' /&gt;" />
+
+			<_ConfuserCrproj Include="&lt;/project&gt;" />
+		</ItemGroup>
+
+		<WriteLinesToFile File="$(ConfuserTempProjFull)" Lines="@(_ConfuserCrproj)" Overwrite="true" />
+
+		<!-- 执行 Confuser（把控制台输出接到 MSBuild 日志） -->
+		<Message Text="======================= 运行 ConfuserEx：&quot;$(ConfuserExPath)&quot; -n &quot;$(ConfuserTempProjFull)&quot; =======================" Importance="high" />
+		<Exec WorkingDirectory="$(MSBuildProjectDirectory)" Command="&quot;$(ConfuserExPath)&quot; -n &quot;$(ConfuserTempProjFull)&quot;" ConsoleToMSBuild="true" StandardOutputImportance="high" StandardErrorImportance="high" />
+		<Message Text="======================= ConfuserEx 执行完成。混淆产物目录：$(ObfOnlyDirFull) =======================" Importance="high" />
+
+		<!-- 如需保留 csproj -->
+		<Message Text="======================= 清理临时 crproj：$(ConfuserTempProjFull) =======================" Importance="high" />
+		<Delete Files="$(ConfuserTempProjFull)" ContinueOnError="true" />
+		<Message Text="======================= 临时 crproj 清理完成。=======================" Importance="high" />
+
+		<!-- 先把 publish 全量复制到 publish-obf（保持原目录结构） -->
+		<Message Text="======================= 复制未混淆发布内容到 publish-obf（保持原结构）=======================" Importance="high" />
+		<ItemGroup>
+			<_PublishFiles Include="$(PublishDirFull)**\*.*" />
+		</ItemGroup>
+		<Copy SourceFiles="@(_PublishFiles)" DestinationFiles="@(_PublishFiles->'$(PublishObfDirFull)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+		<Message Text="======================= 未混淆发布内容复制完成：$(PublishObfDirFull) =======================" Importance="high" />
+
+		<!-- 再用 obf 里的混淆 EXE/DLL 覆盖 publish-obf -->
+		<Message Text="======================= 混淆后的 EXE/DLL 覆盖 publish-obf =======================" Importance="high" />
+		<ItemGroup>
+			<_ObfAssemblies Include="$(ObfOnlyDirFull)**\*.dll;$(ObfOnlyDirFull)**\*.exe" />
+		</ItemGroup>
+		<Copy SourceFiles="@(_ObfAssemblies)" DestinationFiles="@(_ObfAssemblies->'$(PublishObfDirFull)%(RecursiveDir)%(Filename)%(Extension)')" OverwriteReadOnlyFiles="true" />
+		<Message Text="======================= 覆盖完成。=======================" Importance="high" />
+
+		<!-- 总结 -->
+		<PropertyGroup>
+			<__EndTime>$([System.DateTime]::Now.ToString("yyyy-MM-dd HH:mm:ss"))</__EndTime>
+		</PropertyGroup>
+		<Message Text="✅ 混淆流程完成。&#xD;&#xA;开始时间：$(__Now)&#xD;&#xA;结束时间：$(__EndTime)&#xD;&#xA;未混淆包：$(PublishDirFull)&#xD;&#xA;仅混淆产物：$(ObfOnlyDirFull)&#xD;&#xA;完整混淆包：$(PublishObfDirFull)" Importance="high" />
+	</Target>
+
+	<!-- 发布混淆后，去掉 publish-obf 下的 AnBiaoZhiJianTong.Shell.exe.config 中的注释 -->
+	<Target Name="StripConfigComments_AfterObf" AfterTargets="RunConfuserOnPublish">
+		<PropertyGroup>
+			<!-- 以 PublishDir 为基准，和上一个 Target 保持一致 -->
+			<PublishDirFull>$([System.IO.Path]::GetFullPath('$(PublishDir)'))</PublishDirFull>
+			<_PublishTrim>$([System.String]::Copy('$(PublishDirFull)').TrimEnd('\'))</_PublishTrim>
+			<PublishParentDir>$([System.IO.Path]::GetDirectoryName('$(_PublishTrim)'))</PublishParentDir>
+			<PublishObfDirFull>$([System.IO.Path]::GetFullPath('$(PublishParentDir)\publish-obf\'))</PublishObfDirFull>
+
+			<!-- 要处理的配置文件 -->
+			<ObfConfig>$(PublishObfDirFull)AnBiaoZhiJianTong.Shell.exe.config</ObfConfig>
+
+			<!-- 你已经创建好的脚本 -->
+			<StripScript>$(SolutionDir)tools\Build\strip-config-comments.ps1</StripScript>
+		</PropertyGroup>
+
+		<!-- 友好日志 -->
+		<Message Text="移除配置注释：$(ObfConfig)" Importance="high" />
+
+		<!-- 找不到脚本或文件时给出 Warning（不中断发布） -->
+		<Warning Condition="!Exists('$(StripScript)')" Text="未找到脚本：$(StripScript)" />
+		<Warning Condition="Exists('$(StripScript)') and !Exists('$(ObfConfig)')" Text="未找到配置文件：$(ObfConfig)" />
+
+		<!-- 仅当两者都存在才执行 -->
+		<Exec Condition="Exists('$(StripScript)') and Exists('$(ObfConfig)')" ConsoleToMSBuild="true" StandardOutputImportance="high" StandardErrorImportance="high" Command="powershell -NoProfile -ExecutionPolicy Bypass -File &quot;$(StripScript)&quot; &quot;$(ObfConfig)&quot;" />
+	</Target>
+</Project>

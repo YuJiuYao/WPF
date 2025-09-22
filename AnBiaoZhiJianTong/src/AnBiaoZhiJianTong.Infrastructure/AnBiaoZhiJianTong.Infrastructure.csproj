@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net462</TargetFrameworks>
+		<UseWPF>true</UseWPF>
+		<PlatformTarget>x86</PlatformTarget>
+		<Platforms>x86</Platforms>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AnBiaoZhiJianTong.Common\AnBiaoZhiJianTong.Common.csproj" />
+		<ProjectReference Include="..\AnBiaoZhiJianTong.Core\AnBiaoZhiJianTong.Core.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Features\Payments\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="Aspose.Words">
+			<HintPath>..\..\DllImport\Aspose.Words.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Configuration" />
+		<Reference Include="System.Data.SQLite">
+			<HintPath>..\..\DllImport\System.Data.SQLite.dll</HintPath>
+		</Reference>
+		<Reference Include="SqlSugar">
+			<HintPath>..\..\DllImport\SqlSugar.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="CefSharp.Wpf" Version="137.0.100" />
+		<PackageReference Include="SQLite.Interop" Version="1.0.0" />
+	</ItemGroup>
+</Project>

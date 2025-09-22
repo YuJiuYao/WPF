@@ -1,0 +1,24 @@
+.svn/
+# 忽略 Visual Studio 临时文件
+**/.vs/
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
+# 忽略 Visual Studio 发布文件
+**/publish/
+# 忽略 Inno Setup 打包文件
+AnBiaoZhiJianTong/installer/artifacts/
+# 忽略编译输出
+**/bin/
+**/obj/
+# 忽略调试日志
+**/*.log
+# Copilot 索引
+**/CopilotIndices/
+# Copilot 索引
+*.csproj.user
+*_BACKUP_*.csproj
+*_BASE_*.csproj
+*_LOCAL_*.csproj
+*_REMOTE_*.csproj
